@@ -1545,3 +1545,4 @@ node_modules/.bin/uuid
 node_modules/.bin/uuid.cmd
 node_modules/.bin/which
 node_modules/.bin/which.cmd
+node_modules

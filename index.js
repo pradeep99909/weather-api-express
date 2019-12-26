@@ -2,10 +2,8 @@ var express = require('express')
 var bodyParser=require('body-parser')
 var app = express()
 var path = require('path')
-var M=require('./function/add')
 const request = require('request');
 const key = require('./function/key/key');
-var geocoder = require('geocoder');
 app.use( bodyParser.json() );
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,'public')))

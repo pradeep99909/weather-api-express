@@ -1,6 +1,15 @@
-add=(a,b)=>{
-    return Number(a)+Number(b)
+
+class Mul{
+    mul(a,b){
+        return String(Number(a)*Number(b))
+    }
+}
+
+class M extends Mul{
+    add(a,b){
+        return String(Number(a)+Number(b))
+    }
 }
 
 
-module.exports=add
+module.exports=M
