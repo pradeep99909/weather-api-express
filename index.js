@@ -12,10 +12,6 @@ app.get('/',(req,res)=>{
     res.sendFile('index.html')
 })
 
-app.get('/weather',(req,res)=>{
-    res.sendFile('weather.html')
-})
-
 app.post('/getweather',(req,res)=>{
     res.setHeader('Access-Control-Allow-Origin', '*');
     request(`https://api.openweathermap.org/data/2.5/weather?q=${req.body.city}&appid=${key}`,function(err, response, body){
