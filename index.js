@@ -8,12 +8,8 @@ app.use( bodyParser.json() );
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,'public')))
 
-// app.get('/',(req,res)=>{
-//     res.sendFile('index.html')
-// })
-const Math=new M()
-app.post('/login',(req,res)=>{
-    res.send(Math.add(req.body.a,req.body.b))
+app.get('/',(req,res)=>{
+    res.sendFile('index.html')
 })
 
 app.get('/weather',(req,res)=>{
