@@ -30,7 +30,7 @@ app.post('/getweather',(req,res)=>{
 })
 
 app.post('/getcity',(req,res)=>{
-    //res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     request(`https://api.openweathermap.org/data/2.5/weather?lat=${req.body.lat}&lon=${req.body.long}&appid=${key}`,function(err, response, body){
         if(err){
             console.log(err)
